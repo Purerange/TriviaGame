@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <div class="jumbotron container text-center">
+        <h1>Doctor Who Trivia!</h1>
+        <div id="start">
+            <button type="button" id="start-btn" class="btn btn-primary btn-lg">Start!</button>
+        </div>
+        <div id="questionaire">
+            <div id="timer">
+                <h2>Time Remaining: <span id="time-left">60</span> Seconds</h2>
+            </div>
+            <form>
+                <div class="question">
+                    <h3>What is The Doctor's home planet?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio1">Raxacoricofallapatorius &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio1">Gallifrey &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio1">Skaro &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio1">Telos &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>What is The Doctor's vessel called?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio2">Wibbly Wobbly Timey Wimey Space Ship &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio2">The Shuttle &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio2">The TARDIS &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio2">The Sonic Craft &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>What race is The Doctor?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio3">Dalek &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio3">Sontaran &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio3">Judoon &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio3">Time Lord &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>What is The Doctor's favorite tool?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio4">A magic shovel &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio4">A magnetic shield &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio4">A sonic screwdriver &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio4">A living stethoscope &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>What is The Doctor's go-to weapon?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio5">A gun &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio5">A knife &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio5">A bat &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio5">None &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>What will happen when The Doctor dies?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio6">Time will end &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio6">The universe will die &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio6">He will regenerate &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio6">The Daleks are freed from their prison &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>How many hearts does The Doctor have?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio7">One &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio7">Two &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio7">Three &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio7">Four &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>Who is The Doctor's arch enemy?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio8">The Cybermen &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio8">The Daleks &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio8">The Judoon &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio8">The Sontarans &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>In the Series reboot, what do we learn of the Time Lords?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio9">They were trapped in another dimension &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio9">They were all killed &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio9">They ascended to the ethereal plane &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio9">They were frozen in time &nbsp
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>What is The Doctor's saying?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio10">Fantastic! &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio10">Allons-y! &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio10">Geronimo! &nbsp
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio10">Never cruel nor cowardly &nbsp
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
+</html>

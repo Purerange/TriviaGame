@@ -1,0 +1,26 @@
+.jumbotron {
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+#start-btn {
+    width: 300px;
+    height: 60px;
+}
+
+#timer {
+    margin-bottom: 40px;
+}
+
+.question {
+    margin: 20px auto 20px;
+}
+
+#questionaire {
+    display: none;
+}
