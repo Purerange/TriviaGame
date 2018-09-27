@@ -159,23 +159,30 @@
                 <div class="question">
                     <h3>What is The Doctor's saying?</h3>
                     <label class="radio-inline">
-                        <input type="radio" name="optradio10" id="fantastic" value="fantastic">Fantastic! &nbsp
+                        <input type="radio" name="optradio10" id="fantastic" value="any">Fantastic! &nbsp
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="optradio10" id="allons-y" value="allons-y">Allons-y! &nbsp
+                        <input type="radio" name="optradio10" id="allons-y" value="any">Allons-y! &nbsp
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="optradio10" id="geronimo" value="geronimo">Geronimo! &nbsp
+                        <input type="radio" name="optradio10" id="geronimo" value="any">Geronimo! &nbsp
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="optradio10" id="cruel-or-cowardly" value="cruel-or-cowardly">Never cruel nor cowardly &nbsp
+                        <input type="radio" name="optradio10" id="cruel-or-cowardly" value="any">Never cruel nor cowardly &nbsp
                     </label>
                 </div>
+                <input type="submit" class="btn btn-lg" id="submit">
             </form>
         </div>
 
         <div id="results">
-
+            <h3>All Done!</h3>
+            <br>
+            <h4>Correct Answers: <span id="correct-answers"></span></h4>
+            <h4>Incorrect Answers: <span id="incorrect-answers"></span></h4>
+            <h4>Unanswered Questions: <span id="unanswered-questions"></span></h4>
+            <br>
+            <button type="button" id="restart" class="btn btn-primary btn-lg">Restart!</button>
         </div>
     </div>
 
